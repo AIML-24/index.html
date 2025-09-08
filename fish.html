@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlueWave Fish Marketing</title>
+  <meta name="description" content="BlueWave — Fresh fish marketing website. Discover, connect, and buy directly from trusted fishermen."/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509475826633-fed577a2c71b') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      margin-top: 1rem;
+      background: #0077b6;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BlueWave</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Fresh Fish Delivered Daily 🐟</h2>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At <strong>BlueWave Fish Marketing</strong>, we connect fishermen directly with customers. Our mission is to provide fresh, sustainable, and affordable seafood straight from the ocean to your table.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1607300554813-8f42e2a73b1b" alt="Salmon">
+        <h3>Fresh Salmon</h3>
+        <p>High-quality salmon packed with nutrients.</p>
+        <a href="#contact" class="btn">Order Now</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1562158070-57e5b84e1c6e" alt="Tuna">
+        <h3>Premium Tuna</h3>
+        <p>Rich and flavorful tuna, perfect for sushi and grilling.</p>
+        <a href="#contact" class="btn">Order Now</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600697395781-9a9c9a3b2e97" alt="Prawns">
+        <h3>Fresh Prawns</h3>
+        <p>Delicious prawns, ideal for curries and grills.</p>
+        <a href="#contact" class="btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Interested in fresh fish? Reach out to us:</p>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 BlueWave Fish Marketing. All rights reserved.</p>
+  </footer>
+</body>
+</html>
